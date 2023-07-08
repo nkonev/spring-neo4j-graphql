@@ -20,3 +20,24 @@
   }
 }
 ```
+
+# Scrolling
+```graphql
+{
+  accountScroll {
+    edges {
+      node {
+        username
+      }
+    }
+    pageInfo {
+      hasNextPage
+      endCursor
+    }
+  }
+}
+```
+then
+```graphql
+
+```
