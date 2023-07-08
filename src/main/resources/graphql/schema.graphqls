@@ -1,0 +1,18 @@
+type Query {
+    accounts: [Account]!
+}
+type Account {
+    id: ID!
+    username: String!
+    displayName: String!
+    server: Server!
+    following: [Account]
+    lastMessage: String!
+}
+
+type Server {
+    uri: ID!
+    title: String!
+    shortDescription: String!
+    connectedServers: [Server]
+}

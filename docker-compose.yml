@@ -1,0 +1,16 @@
+version: '3.7'
+
+services:
+  neo4j:
+    image: neo4j:5.9.0-community
+    restart: unless-stopped
+    ports:
+      - 7474:7474
+      - 7687:7687
+    environment:
+      - NEO4J_AUTH=none
+    volumes:
+      - neo4j_data_dir:/data:z
+
+volumes:
+  neo4j_data_dir:
