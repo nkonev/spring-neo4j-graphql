@@ -55,3 +55,8 @@ then
   }
 }
 ```
+
+
+# Further reading
+* https://spring.io/blog/2023/06/27/using-spring-for-graphql-with-spring-data-neo4j
+* https://github.com/meistermeier/spring-graphql-neo4j/blob/be65c00a5286a372655884313c84c453f82ddfa8/README.adoc

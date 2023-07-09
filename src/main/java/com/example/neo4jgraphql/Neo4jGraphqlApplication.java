@@ -22,9 +22,10 @@ public class Neo4jGraphqlApplication {
 
     /**
      * Makes the Neo4j driver use Micrometer for metrics reporting.
+     * Uses actuator dependency.
      */
-//    @Bean
-//    ConfigBuilderCustomizer configBuilderCustomizer() {
-//        return configBuilder -> configBuilder.withMetricsAdapter(MetricsAdapter.MICROMETER);
-//    }
+    @Bean
+    ConfigBuilderCustomizer configBuilderCustomizer() {
+        return configBuilder -> configBuilder.withMetricsAdapter(MetricsAdapter.MICROMETER);
+    }
 }
